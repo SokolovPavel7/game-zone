@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Mynerve&family=Pacifico&display=swap');
+
+* {
+  box-sizing: border-box; /*размер бокса - граница бокса*/
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url(src/jpg/main-menu.jpg);
+  display: flex;
+  padding-top: 5rem;
+  text-align: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+}
+
+body h1 {
+  font-size: 70px;
+  font-family: 'Mynerve', cursive;
+}
+
+.row {
+  display: flex;
+  width: 600px;
+  justify-content: space-between; /*выравнивание содержимого: пробел между*/
+  margin-bottom: 1rem;
+}
+
+.game {
+  width: 150px;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border-radius: 20px;
+  padding: 0.8rem 1rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.item {
+  width: 150px;
+  border: 1px solid #eee;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border-radius: 20px;
+  background: rgb(0, 255, 255);
+  padding: 0.8rem 1rem;
+  color: #828282;
+  text-align: center;
+  cursor: grab;
+}
+
+.item:active {
+  cursor: grabbing;
+}
+
+.flight {
+  border: 1px solid black;
+  background: rgba(0, 255, 255, 0.7);
+}
+
+.hide {
+  display: none;
+}
+
+.placeholder {
+  width: 150px;
+  height: 46px;
+}
+
+.start_1 {
+  background: linear-gradient(90deg, #ff85e4 0%, #229efd 179.25%);
+}
+
+.start_2 {
+  background: linear-gradient(90deg, #209cff 0%, #68e0cf 100%);
+}
+
+.start_3 {
+  background: linear-gradient(90deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.hovered {
+  border: 2px solid #8ed7ed;
+  border-radius: 20px;
+}
