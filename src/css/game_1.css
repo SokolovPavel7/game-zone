@@ -16,7 +16,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 400px;
+  max-width: 800px;
   flex-wrap: wrap /*гибкая обертка: обернуть*/;
 }
 
@@ -27,4 +27,8 @@ body {
   margin: 2px;
   box-shadow: 0 0 2px #000;
   transition: 2s ease;
+}
+
+.square:hover {
+  transition-duration: 0s; /*Продолжительность перехода*/
 }

@@ -1,6 +1,5 @@
 const item = document.querySelector('.item');
 const placeholders = document.querySelectorAll('.placeholder');
-const gameStart = document.querySelectorAll('.game');
 
 item.addEventListener('dragstart', dragStart);
 item.addEventListener('dragend', dragEnd);
@@ -47,9 +46,3 @@ function dragDrop(event) {
   event.target.append(item);
   event.target.classList.remove('hovered');
 }
-
-gameStart.addEventListener('click', openPage);
-
-const openPage = (event) => {
-  event.forEach(() => {});
-};
