@@ -107,6 +107,8 @@ function win() {
         fields[comb[i][1]].classList.add('active');
         fields[comb[i][2]].classList.add('active');
         res.innerHTML = 'Поздравляем победителя!!!';
+        const victoryAudio = new Audio('../audio/victory.mp3');
+        victoryAudio.play();
       }, 1500);
       game.removeEventListener('click', init);
     } else if (
@@ -119,10 +121,14 @@ function win() {
         fields[comb[i][1]].classList.add('active');
         fields[comb[i][2]].classList.add('active');
         res.innerHTML = 'Поздравляем победителя!!!';
+        const victoryAudio = new Audio('../audio/victory.mp3');
+        victoryAudio.play();
       }, 1500);
       game.removeEventListener('click', init);
     } else if (count === 9) {
       res.innerText = 'Ничья!!!';
+      const defeatAudio = new Audio('../audio/defeat.mp3');
+      defeatAudio.play();
       game.removeEventListener('click', init);
     }
   }

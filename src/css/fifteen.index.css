@@ -1,0 +1,70 @@
+body,
+html {
+  font: 16px/1.4 Georgia, serif;
+  background-image: url(/src/jpg/fifteen.jpg);
+}
+@media only screen and (max-width: 500px) {
+  body,
+  html {
+    font-size: 14px;
+  }
+}
+.page {
+  max-width: 400px;
+  padding: 2rem;
+  margin: 0 auto;
+  text-align: center;
+  user-select: none;
+}
+h1 {
+  font: 2rem/1.2 Georgia, serif;
+  margin-bottom: 1em;
+  color: #fff;
+}
+.fifteen {
+  width: 100%;
+  padding-bottom: 100%;
+  background: #025a6c;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+.fifteen .item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25%;
+  height: 25%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: #112d49;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  box-shadow: inset 1px 1px #025a6c;
+  transition: transform 0.2s filter 0.5s;
+}
+.fifteen .itemVal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 84%;
+  height: 84%;
+  margin: 8%;
+  box-shadow: inset 0 0 0 2px #025a6c;
+}
+.fifteenWon .item {
+  filter: brightness(200%);
+}
+.button {
+  color: #fff;
+  background: #112d49;
+  font: 2rem/1.2 Georgia, serif;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 0.5em 1.5em;
+}
+.button:hover {
+  background: #025a6c;
+}
