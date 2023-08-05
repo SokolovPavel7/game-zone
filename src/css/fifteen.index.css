@@ -1,7 +1,7 @@
 body,
 html {
   font: 16px/1.4 Georgia, serif;
-  background-image: url(/src/jpg/fifteen.jpg);
+  background-image: url('../jpg/fifteen.jpg');
 }
 @media only screen and (max-width: 500px) {
   body,
